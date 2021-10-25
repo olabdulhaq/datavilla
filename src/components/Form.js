@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button'
 //   MuiPickersUtilsProvider,
 //   KeyboardDatePicker,
 // } from '@material-ui/pickers';
-import { format, sub } from 'date-fns';
+import 'date-fns';
 import TextField from '@mui/material/TextField';
 import DateRangePicker from '@mui/lab/DateRangePicker';
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
@@ -30,12 +30,12 @@ const Form = ({orders, handleSearch}) => {
     // const [city, setCity] = useState('');
     // const [stat, setState] = useState('');
 
-    const startDate = value[0];
-    const endDate = value[1];
+    // const startDate = value[0];
+    // const endDate = value[1];
 
-    const currentDate = format(new Date(startDate), 'MM/dd/yyyy')
-    const prevDate = format(new Date(endDate), 'MM/dd/yyyy')
-    const certainDate = sub(currentDate, prevDate);
+    // const currentDate = format(new Date(startDate), 'MM/dd/yyyy')
+    // const prevDate = format(new Date(endDate), 'MM/dd/yyyy')
+    // const certainDate = sub(currentDate, prevDate);
     // const filteredDates = orders.filter(order => order["Order Date"] > certainDate);
 
     // console.log(currentDate);
