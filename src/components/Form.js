@@ -36,7 +36,7 @@ const Form = ({orders, handleSearch}) => {
     const currentDate = format(new Date(startDate), 'MM/dd/yyyy')
     const prevDate = format(new Date(endDate), 'MM/dd/yyyy')
     const certainDate = sub(currentDate, prevDate);
-    const filteredDates = orders.filter((order )=> order["Order Date"] > certainDate));
+    // const filteredDates = orders.filter(order => order["Order Date"] > certainDate);
 
     // console.log(currentDate);
     // console.log(prevDate);
@@ -62,7 +62,7 @@ const Form = ({orders, handleSearch}) => {
 
     return (
         <div>
-            <form checkMatch={filteredDates} onSubmit={handleSearch}>
+            <form onSubmit={handleSearch}>
                 {/* <MuiPickersUtilsProvider utils={DateFnsUtils}>
                     <KeyboardDatePicker
                         disableToolbar
